@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.taskmanager2.Home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.taskmanager2.Dashboard.DashBoardFragment"
+        android:label="DashBoard"
+        tools:layout="@layout/fragment_dash_board" />
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.taskmanager2.Notification.NotificationFragment"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/taskFragment"
+        android:name="com.example.taskmanager2.Task.TaskFragment"
+        android:label="Task"
+        tools:layout="@layout/fragment_task" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.taskmanager2.Profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.example.taskmanager2.OnBoard.OnBoardFragment"
+        android:label="fragment_on_board"
+        tools:layout="@layout/fragment_on_board" />
+</navigation>
